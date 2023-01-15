@@ -1,4 +1,4 @@
-### Julia Bays
+# Julia Bays
 
 # Link to my portfolio Git Pages website
 https://juliabays.github.io/JuliaBays/
