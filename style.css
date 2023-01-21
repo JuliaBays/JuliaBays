@@ -594,10 +594,10 @@ p {
 #about .col-left .about-img::after {
     content: '';
     position: absolute;
-    left: -33px;
-    top: 19px;
-    height: 98%;
-    width: 98%;
+    left: -7px;
+    top: 2px;
+    height: 100%;
+    width: 100%;
     border: 7px solid rgb(3, 49, 117);
     z-index: -1;
 }
