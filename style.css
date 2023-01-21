@@ -598,7 +598,7 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
+    border: 7px solid rgb(3, 49, 117);
     z-index: -1;
 }
 
