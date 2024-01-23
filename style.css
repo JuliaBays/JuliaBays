@@ -1054,3 +1054,33 @@ p {
 
 
 /* end of custom scroll bar */
+
+/* back to top button */
+#upButton {
+    position: fixed;
+    bottom: 30px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: transparent;
+    border: none;
+    color: rgb(87, 132, 179);
+    font-size: 35px; /* Adjust as needed */
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #upButton:hover {
+    color:rgb(16, 51, 122); /* Adjust as needed */
+  }
+
+  #email-link{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px; /* Adjust as needed */
+    cursor: pointer;
+    outline: none;
+  }
+
+  #email-link:hover {
+    color:rgb(16, 51, 122); /* Adjust as needed */
+  }

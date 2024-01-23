@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--Link to fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--link to the js-->
     <script src="static/js/app.js"></script>
     <!--link to the css -->
@@ -174,6 +175,16 @@
             <div class="projects-header">
                 <h1 class="section-title">SWJ 2.0: Fall 2023</h1>
             </div>
+
+            <div class="project-about">
+                <div class="project-info">
+                    <h3>Check out SWJ website progress</h3>
+                    <h2><a href="https://www.swj1894.org" type="button" class="cta2">SWJ Site</a></h2>
+                </div>
+            </div>
+
+            <br>
+
             <div class="all-projects">
                 <div class="project-item">
                     <div class="project-info">
@@ -225,13 +236,6 @@
                     
                 </div>
 
-            </div>
-
-            <div class="project-about">
-                <div class="project-info">
-                    <h3>New Design</h3>
-                    <h2>Currently in progress</h2>
-                </div>
             </div>
             <br>
             <br>
@@ -318,13 +322,21 @@
     </section>
     <!-- End Contact Section -->
 
+<button onclick="topFunction()" id="upButton" title="Go to top"><i class="fa fa-arrow-circle-o-up"></i></button>
+
     <!-- Footer -->
     <section id="footer">
         <div class="footer container">
-            <p>Copyright © 2020 Arfan. All rights reserved</p>
+            <div class="emailContainer">
+                <a id="email-link" class="email-link" href="mailto:baysj1@udayton.edu"><i class="fa fa-envelope"></i></a>
+            </div>
+            <br>
+            <p id="copyright"></p>
         </div>
     </section>
     <!-- End Footer -->
+
+    <!--Points to the javascript file-->
     <script src="app.js"></script>
 </body>
 
