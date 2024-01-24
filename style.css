@@ -1077,7 +1077,7 @@ p {
 }
 
 #header .brand:hover {
-    border-bottom: 2px solid white; /* Add a bottom border on hover for better visibility */
+    color: rgb(16, 51, 122); 
 }
 
 #header .nav-list {
@@ -1216,6 +1216,7 @@ p {
 #tab_bar {
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 10px;
 }
 
@@ -1229,6 +1230,8 @@ p {
 }
 
 #tab_bar .tabButton:hover {
+    color: rgb(16, 51, 122); 
+    font-weight: bold;
     border-bottom: 2px solid white; /* Add a bottom border on hover for better visibility */
 }
 
