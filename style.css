@@ -1188,6 +1188,20 @@ p {
     color:rgb(16, 51, 122); /* Adjust as needed */
   }
 
+  #linkdin-link{
+    margin-left: -10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px; /* Adjust as needed */
+    cursor: pointer;
+    outline: none;
+  }
+
+  #linkdin-link:hover {
+    color:rgb(16, 51, 122); /* Adjust as needed */
+  }
+
  /* Your existing styles here */
 
 /* Media Query For Small Screens */

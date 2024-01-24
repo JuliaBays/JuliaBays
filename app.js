@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function showTab(tabId) {
   // Hide all tabs
-  var tabs = ["hero", "projects", "about", "contact"];
+  var tabs = ["hero", "projects", "about"];
   tabs.forEach(function(tab) {
       document.getElementById(tab).style.display = "none";
   });
@@ -15,6 +15,12 @@ function showTab(tabId) {
 }
 
 // Tab Buttons
+
+document.getElementById("tab0").addEventListener("click", function(event) {
+  event.preventDefault();
+  showTab("hero");
+});
+
 document.getElementById("tab1").addEventListener("click", function(event) {
   event.preventDefault();
   showTab("hero");
@@ -30,10 +36,7 @@ document.getElementById("tab3").addEventListener("click", function(event) {
   showTab("about");
 });
 
-document.getElementById("tab4").addEventListener("click", function(event) {
-  event.preventDefault();
-  showTab("contact");
-});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
