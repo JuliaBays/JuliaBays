@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!--Link to fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--link to the js-->
@@ -34,7 +35,8 @@
                 <div class="nav-list">
                     <div id="tab_bar">
                         <button class="tabButton" id="tab1"><a href="#hero" data-after="Home">Home</a></button>
-                        <button class="tabButton" id="tab2"><a href="#projects" data-after="Projects">Projects</a></button>
+                        <button class="tabButton" id="tab2"><a href="#projects"
+                                data-after="Projects">Projects</a></button>
                         <button class="tabButton" id="tab3"><a href="#about" data-after="About us">About Me</a></button>
                     </div>
                 </div>
@@ -74,112 +76,154 @@
                         <p>- Map networks of social and professional support among female journalists </p>
                         <p>- Recover a detailed history of the early years of the SWJ</p>
                         <p>- Centralize SWJ membership lists and make them more widely accessible</p>
-                    <h2><a href="https://www.swj1894.org" type="button" class="cta2">SWJ Site</a></h2>
+                        <h2><a href="https://www.swj1894.org" type="button" class="cta2">SWJ Site</a></h2>
                     </div>
                 </div>
                 <br>
                 <br>
                 <br>
-            <!--new swj for 2023-->
-            <div class="projects-header">
-                <h1 class="section-title">SWJ 2.0: Fall 2023</h1>
-            </div>
-
-
-            <br>
-
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Sprint 1: Working Website Skeleton Locally</h1>
-                        <h2>- Set up a basic website application framework</h2>
-                        <h2>- Work the skeleton website locally</h2>
-                        <h2>- Add in the local database postgres SQL</h2>
-                        <h2>- Created a basic search bar function</h2>
-                        <h2>- Wrote instructions of website setup</h2>
-                        <a href="https://docs.google.com/presentation/d/1nY2e3e2mL50i1DqBe5EVTtY5AbAZkpYxLyBIaA5Rgs8/edit?usp=sharing" type="button" class="cta2">Sprint 1</a>
-                        <!--<p>tba</p>-->
-                    </div>
-                    <div class="project-img">
-                        <!-- you can insert an image corresponding -->
-                        <img src="https://trello.com/1/cards/658b27e52222b2d38426af07/attachments/658b2a48876d30b7e1be00ed/download/members_page.pngg" alt="img" style="max-width: 100%; height: auto;">
-                    </div>
-                    
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Sprint 2: Deploying Skeleton Website</h1>
-                        <h2>- Switched from Heroku to Render</h2>
-                        <h2>- Utilize Render's postgresSQL database</h2>
-                        <h2>- Began further implementing more features to improving the website</h2>
-                        <h2>- Wrote instructions of website setup</h2>
-                        <!--<p>tba</p>-->
-                    </div>
-                    <div class="project-img">
-                        <!-- you can insert an image corresponding -->
-                        <img src="https://trello.com/1/cards/658b27e52222b2d38426af07/attachments/658b2a48876d30b7e1be00ed/download/members_page.pngg" alt="img" style="max-width: 100%; height: auto;">
-                    </div>
-                    
+                <br>
+                <!--swj for spring 2024-->
+                <div class="projects-header">
+                    <h1 class="section-title">SWJ 3.0: Spring 2024</h1>
                 </div>
 
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Sprint 3: Official Foundation of Website</h1>
-                        <h2>- Implemented many features to improve website usability</h2>
-                        <h2>- Wrote a python script to add/delete SWJ members from excel to website</h2>
-                        <h2>- Implemented security features</h2>
-                        <h2>- Created the basic framework of the SWJ website</h2>
-                        <h2>- Wrote instructions of website setup</h2>
-                        <!--<p>tba</p>-->
-                    </div>
-                    <div class="project-img">
-                        <!-- you can insert an image corresponding -->
-                        <img src="https://trello.com/1/cards/658b27e52222b2d38426af07/attachments/658b2a48876d30b7e1be00ed/download/members_page.pngg" alt="img" style="max-width: 100%; height: auto;">
-                    </div>
-                    
-                </div>
-
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!--End of SWJ 2023-->
-            <!--SWJ 2.0 Spring 2023-->
-            <div class="projects-header">
-                <h1 class="section-title">SWJ 1.5: Spring 2023 </h1>
-            </div>
-            <div class="all-projects2">
                 <div class="project-about">
                     <div class="project-info">
-                        <h3>Redesign of SWJ site using Django</h3>
-                        <h2>Why?</h2>
-                        <p>- Current source code is difficult to work with and hard to modify </p>
-                        <p>- We spent 7 hours with Dr. Stiffler trying to edit static code that was hard coded </p>
-                        <p>- After all this time with Dr. Stiffler, we still couldn't set up a staging environment</p>
-                        <p>- Trying to implement any further functionality would have likely taken much longer than expected</p>
-                        <p>- Django framework is much more suitable to Dr. Vorachek's wants and needs for this site</p>
-                        <p>- All CIS majors are required to take a class taught by Dr. Stiffler that uses Django, meaning not only </p>
-                        <p>   will Dr. Stiffler be able to help with this project in the future, but all CIS seniors will </p>
-                        <p>   also be familiar with the framework</p>
-                        <a href="https://docs.google.com/presentation/d/10ig8EET_dI7hpPe1ZVXCRI8sCdH_47tCFixsq2F-z5Y/edit?usp=sharing" type="button" class="cta2">Presentation</a>
+                        <p>Leading a team of undergrad developers to enhance search functionalities for SWJ 3.0</p>
                     </div>
                 </div>
-            </div>
-            <!--Spring 2023-->
+                <br>
+                <br>
+                <br>
+                <!--new swj for 2023-->
+                <div class="projects-header">
+                    <h1 class="section-title">SWJ 2.0: Fall 2023</h1>
+                </div>
 
-            <div class="projects-header">
-                <h1 class="section-title">SWJ 1.0: Spring 2023</h1>
-            </div>
+                <div class="project-about">
+                    <div class="project-info">
+                        <p>Developed and successfully deployed the SWJ 2.0 website foundation</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="all-projects">
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Sprint 1: Working Website Skeleton Locally</h1>
+                            <h2>- Set up a basic website application framework</h2>
+                            <h2>- Work the skeleton website locally</h2>
+                            <h2>- Add in the local database postgres SQL</h2>
+                            <h2>- Created a basic search bar function</h2>
+                            <h2>- Wrote instructions of website setup</h2>
+                            <a href="https://docs.google.com/presentation/d/1nY2e3e2mL50i1DqBe5EVTtY5AbAZkpYxLyBIaA5Rgs8/edit?usp=sharing"
+                                type="button" class="cta2">Sprint 1</a>
+                            <!--<p>tba</p>-->
+                        </div>
+                        <div class="project-img">
+                            <!-- you can insert an image corresponding -->
+                            <img src="https://trello.com/1/cards/658b27e52222b2d38426af07/attachments/658b2a48876d30b7e1be00ed/download/members_page.pngg"
+                                alt="img" style="max-width: 100%; height: auto;">
+                        </div>
+
+                    </div>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Sprint 2: Deploying Skeleton Website</h1>
+                            <h2>- Switched from Heroku to Render</h2>
+                            <h2>- Utilize Render's postgresSQL database</h2>
+                            <h2>- Began further implementing more features to improving the website</h2>
+                            <h2>- Wrote instructions of website setup</h2>
+                            <!--<p>tba</p>-->
+                        </div>
+                        <div class="project-img">
+                            <!-- you can insert an image corresponding -->
+                            <img src="https://trello.com/1/cards/658b27e52222b2d38426af07/attachments/658b2a48876d30b7e1be00ed/download/members_page.pngg"
+                                alt="img" style="max-width: 100%; height: auto;">
+                        </div>
+
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h1>Sprint 3: Official Foundation of Website</h1>
+                            <h2>- Implemented many features to improve website usability</h2>
+                            <h2>- Wrote a python script to add/delete SWJ members from excel to website</h2>
+                            <h2>- Implemented security features</h2>
+                            <h2>- Created the basic framework of the SWJ website</h2>
+                            <h2>- Wrote instructions of website setup</h2>
+                            <!--<p>tba</p>-->
+                        </div>
+                        <div class="project-img">
+                            <!-- you can insert an image corresponding -->
+                            <img src="https://trello.com/1/cards/658b27e52222b2d38426af07/attachments/658b2a48876d30b7e1be00ed/download/members_page.pngg"
+                                alt="img" style="max-width: 100%; height: auto;">
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!--End of SWJ 2023-->
+                <!--SWJ 2.0 Spring 2023-->
+                <div class="projects-header">
+                    <h1 class="section-title">SWJ 1.5: Spring 2023 </h1>
+                </div>
+                <div class="all-projects2">
+                    <div class="project-about">
+                        <div class="project-info">
+                            <h3>Redesign of SWJ site using Django</h3>
+                            <h2>Why?</h2>
+                            <p>- Current source code is difficult to work with and hard to modify </p>
+                            <p>- We spent 7 hours with Dr. Stiffler trying to edit static code that was hard coded </p>
+                            <p>- After all this time with Dr. Stiffler, we still couldn't set up a staging environment
+                            </p>
+                            <p>- Trying to implement any further functionality would have likely taken much longer than
+                                expected</p>
+                            <p>- Django framework is much more suitable to Dr. Vorachek's wants and needs for this site
+                            </p>
+                            <p>- All CIS majors are required to take a class taught by Dr. Stiffler that uses Django,
+                                meaning not only </p>
+                            <p> will Dr. Stiffler be able to help with this project in the future, but all CIS seniors
+                                will </p>
+                            <p> also be familiar with the framework</p>
+                            <a href="https://docs.google.com/presentation/d/10ig8EET_dI7hpPe1ZVXCRI8sCdH_47tCFixsq2F-z5Y/edit?usp=sharing"
+                                type="button" class="cta2">Presentation</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!--Spring 2023-->
+
+                <div class="projects-header">
+                    <h1 class="section-title">SWJ 1.0: Spring 2023</h1>
+                </div>
+                <div class="project-about">
+                    <div class="project-info">
+                        <p>- Began work on the SWJ 1.0. </p>
+                        <p>- Decided original website unstable for future development.</p>
+                        <p>- Created a plan (SWJ 1.5) for a new SWJ website </p>
+                    </div>
+                </div>
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Sprint 0</h1>
                         <h2>Plan sprints, create and organize repo... </h2>
                     </div>
                     <div class="project-img">
-                        <img src="https://trello.com/1/cards/63d43d5cefee6b5d647cffb3/attachments/63d43d5cefee6b5d647cffd6/download/image.png" alt="img">
+                        <img src="https://trello.com/1/cards/63d43d5cefee6b5d647cffb3/attachments/63d43d5cefee6b5d647cffd6/download/image.png"
+                            alt="img">
                         <!-- you can insert an image corresponding-->
                     </div>
                 </div>
@@ -190,12 +234,14 @@
                         <h2>- Get the site up and running</h2>
                         <h2>- Fix data errors</h2>
                         <h2>- Design a new database schema</h2>
-                        <a href="https://docs.google.com/presentation/d/16ziCuFXNBR-MsMA97mR0RqR46ns7UinPEHUpRRxMA8w/edit?usp=sharing" type="button" class="cta2">Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/16ziCuFXNBR-MsMA97mR0RqR46ns7UinPEHUpRRxMA8w/edit?usp=sharing"
+                            type="button" class="cta2">Presentation</a>
                         <!--<p>tba</p>-->
                     </div>
                     <div class="project-img">
                         <!-- you can insert an image corresponding-->
-                        <img src="https://trello.com/1/cards/63eb8e90e63d47a837da21ab/attachments/63eb8e9ecb7571de4544f82e/download/image.png" alt="img">
+                        <img src="https://trello.com/1/cards/63eb8e90e63d47a837da21ab/attachments/63eb8e9ecb7571de4544f82e/download/image.png"
+                            alt="img">
                     </div>
                 </div>
                 <div class="project-item">
@@ -206,12 +252,14 @@
                         <h2>- Decide on new DB schema</h2>
                         <h2>- Write a python script to enter data</h2>
                         <h2>- Repopulate database</h2>
-                        <a href="https://docs.google.com/presentation/d/1u2vgFpz-_Hm850FGbT73rDVJ9BbLi5iO23WsS5Yy7K4/edit#slide=id.p" type="button" class="cta2">Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1u2vgFpz-_Hm850FGbT73rDVJ9BbLi5iO23WsS5Yy7K4/edit#slide=id.p"
+                            type="button" class="cta2">Presentation</a>
                         <!--<p>tba</p>-->
                     </div>
                     <div class="project-img">
                         <!-- you can insert an image corresponding-->
-                        <img src="https://trello.com/1/cards/641a75ff0185831da58712bc/attachments/641a760e79757d4c76e257da/download/image.png" alt="img">
+                        <img src="https://trello.com/1/cards/641a75ff0185831da58712bc/attachments/641a760e79757d4c76e257da/download/image.png"
+                            alt="img">
 
                     </div>
                 </div>
@@ -225,14 +273,15 @@
                         <h2>- Write a guide for the next group</h2>
                         <!--<p>tba</p>-->
                     </div>
-                    <div class="project-img">       
+                    <div class="project-img">
                         <!-- you can insert an image corresponding-->
-                        <img src="https://trello.com/1/cards/6446b3ce997af7a6d82c31a1/attachments/6446b4d97839780c6714aca7/download/image.png" alt="img">
+                        <img src="https://trello.com/1/cards/6446b3ce997af7a6d82c31a1/attachments/6446b4d97839780c6714aca7/download/image.png"
+                            alt="img">
                     </div>
                 </div>
-                
+
             </div>
-            
+
 
             <br>
             <br>
@@ -248,10 +297,12 @@
                 <div class="project-about">
                     <div class="project-info">
                         <h3>Project Overview</h3>
-                        <h2>Exploring input & interaction techniques, with an emphasis on universal design & alternative interfaces </h2>
+                        <h2>Exploring input & interaction techniques, with an emphasis on universal design & alternative
+                            interfaces </h2>
                         <p>- Assignment 1: Basic mock phone dialer, contact info, and add info </p>
                         <p>- Assignment 2: Adding a tab for gesture reading techniques with a mouse and keyboard </p>
-                        <a href="https://jbays1.github.io/JuliaBaysCPS592/" type="button" class="cta2">Accessibility Site</a>
+                        <a href="https://jbays1.github.io/JuliaBaysCPS592/" type="button" class="cta2">Accessibility
+                            Site</a>
                     </div>
                 </div>
             </div>
@@ -291,13 +342,14 @@
             <div class="about-person Julia">
                 <div class="col-left">
                     <div class="about-img">
-                        <img src="https://images.sidearmdev.com/resize?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2fudayton.sidearmsports.com%2fimages%2f2020%2f9%2f8%2fJulia_Bays_Headshot.png&width=300&type=png" alt="img">
+                        <img src="https://images.sidearmdev.com/resize?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2fudayton.sidearmsports.com%2fimages%2f2020%2f9%2f8%2fJulia_Bays_Headshot.png&width=300&type=png"
+                            alt="img">
                     </div>
                 </div>
                 <div class="col-right"> <!-- this just creates empty space... -->
-                    <h1 class="section-title"><span>       </span></h1>
-                    <h2>          </h2>
-                    <p><span>      </span></p>
+                    <h1 class="section-title"><span> </span></h1>
+                    <h2> </h2>
+                    <p><span> </span></p>
                 </div>
                 <div class="col-right">
                     <h1 class="section-title"><span>Julia Bays</span></h1>
@@ -312,18 +364,20 @@
                     <!--<p><span>tba</span></p>-->
                 </div>
             </div>
-        </div>       
+        </div>
     </section>
     <!-- End About Section -->
 
-<button onclick="topFunction()" id="upButton" title="Go to top"><i class="fa fa-arrow-circle-o-up"></i></button>
+    <button onclick="topFunction()" id="upButton" title="Go to top"><i class="fa fa-arrow-circle-o-up"></i></button>
 
     <!-- Footer -->
     <section id="footer">
         <div class="footer container">
             <div class="emailContainer">
-                <a id="linkdin-link" class="linkdin-link" href="https://www.linkedin.com/in/julia-bays-28514b253/"><i class="fa fa-linkedin"></i></a>
-                <a id="email-link" class="email-link" href="mailto:baysj1@udayton.edu"><i class="fa fa-envelope"></i></a>
+                <a id="linkdin-link" class="linkdin-link" href="https://www.linkedin.com/in/julia-bays-28514b253/"><i
+                        class="fa fa-linkedin"></i></a>
+                <a id="email-link" class="email-link" href="mailto:baysj1@udayton.edu"><i
+                        class="fa fa-envelope"></i></a>
             </div>
             <br>
             <p id="copyright"></p>
