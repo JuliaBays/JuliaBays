@@ -1,36 +1,56 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-    const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-    const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
-    const header = document.querySelector('.header.container');
+// Tabs switching
+document.addEventListener("DOMContentLoaded", function() {
+  showTab("hero");
+});
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
-    });
+function showTab(tabId) {
+  // Hide all tabs
+  var tabs = ["hero", "projects", "about", "contact"];
+  tabs.forEach(function(tab) {
+      document.getElementById(tab).style.display = "none";
+  });
 
-    document.addEventListener('scroll', () => {
-        var scroll_position = window.scrollY;
-        if (scroll_position > 250) {
-            header.style.backgroundColor = '#29323c';
-        } else {
-            header.style.backgroundColor = 'transparent';
-        }
-    });
+  // Show the selected tab
+  document.getElementById(tabId).style.display = "block";
+}
 
-    menu_item.forEach((item) => {
-        item.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            mobile_menu.classList.remove('active');
-        });
-    });
+// Tab Buttons
+document.getElementById("tab1").addEventListener("click", function(event) {
+  event.preventDefault();
+  showTab("hero");
+});
+
+document.getElementById("tab2").addEventListener("click", function(event) {
+  event.preventDefault();
+  showTab("projects");
+});
+
+document.getElementById("tab3").addEventListener("click", function(event) {
+  event.preventDefault();
+  showTab("about");
+});
+
+document.getElementById("tab4").addEventListener("click", function(event) {
+  event.preventDefault();
+  showTab("contact");
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('#header .hamburger');
+  const mobile_menu = document.querySelector('#header .nav-list');
+  
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobile_menu.classList.toggle('active');
+  });
+});
+
+// Scroll back up button
 let mybutton = document.getElementById("upButton");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -75,6 +95,7 @@ function scrollToTop(element, to, duration) {
 
   animateScroll();
 }
+
 
 // JavaScript to dynamically set the current year
 document.addEventListener("DOMContentLoaded", function() {

@@ -24,20 +24,20 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="#hero">
-                        <h1><span>Julia</span></h1>
+                    <a href="#hero" class="tabButton" id="tab1" data-after="Home">
+                        Julia
                     </a>
                 </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
                 <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
+                    <div id="tab_bar">
+                        <button class="tabButton" id="tab1"><a href="#hero" data-after="Home">Home</a></button>
+                        <button class="tabButton" id="tab2"><a href="#projects" data-after="Projects">Projects</a></button>
+                        <button class="tabButton" id="tab3"><a href="#about" data-after="About us">About Me</a></button>
+                        <button class="tabButton" id="tab4"><a href="#contact" data-after="Contact">Contact</a></button>
                     </div>
-                    <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About us">About Me</a></li>
-                        <li><a href="#contact" data-after="Contact">Contact</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -45,21 +45,20 @@
     <!-- End Header -->
 
 
-    <!-- Hero Section top section  -->
+
+    <!-- Hero Section top section -->
     <section id="hero">
         <div class="hero container">
             <div>
                 <h1>Hi, I'm Julia Bays and welcome to my portfolio</h1>
                 <p>This site showcases my projects and what I am currently working on. </p>
-                <a href="#projects" type="button" class="cta">Projects</a>
-                <a href="#about" type="button" class="cta">About me</a>
-                <a href="#contact" type="button" class="cta">Contact</a>
-                <a href="https://messenger-22f-02.herokuapp.com/" type="button" class="cta">Messenger Site</a>
                 <a href="https://swj1894.org/" type="button" class="cta">SWJ Site</a>
+                <a href="https://jbays1.github.io/JuliaBaysCPS592/" type="button" class="cta">Accessibility Site</a>
+                <a href="https://messenger-22f-02.herokuapp.com/" type="button" class="cta">Messenger Site</a>
             </div>
         </div>
     </section>
-    <!-- End Hero Section  -->
+    <!-- End Hero Section -->
 
     <!-- Projects Section -->
     <section id="projects">
@@ -267,9 +266,6 @@
 
     <!-- About Section -->
     <section id="about">
-        <div class="about-header">
-            <h1 class="section-title">About Me</h1>
-        </div>
         <div class="about container">
             <div class="about-person Julia">
                 <div class="col-left">

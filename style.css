@@ -136,7 +136,6 @@ p {
 #header .header {
     min-height: 8vh;
     background-color: rgba(91, 139, 188, 0.533);
-    /*color of header rectangle*/
     transition: 0.3s ease background-color;
 }
 
@@ -154,7 +153,6 @@ p {
     list-style: none;
     position: absolute;
     background-color: rgb(115, 149, 182);
-    /*can't find*/
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -202,34 +200,21 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-    color: rgb(17, 59, 90); /*was rgb(11, 2, 136)*/
-    /*nav-bar hover over home, projects, contact*/
+    color: rgb(17, 59, 90);
 }
 
 #header .hamburger {
-    height: 60px;
-    width: 60px;
+    height: 60px; /* Adjust the height as needed */
+    width: 60px;  /* Adjust the width as needed */
     display: inline-block;
-    border: 3px solid white;
-    border-radius: 50%;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Adjust spacing between bars */
     z-index: 100;
     cursor: pointer;
-    transform: scale(0.8);
-    margin-right: 20px;
-}
-
-#header .hamburger:after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 3px solid white;
-    animation: hamburger_puls 1s ease infinite;
+    margin-right: 40px;
+    margin-top: 20px;
 }
 
 #header .hamburger .bar {
@@ -268,8 +253,20 @@ p {
     top: 0;
 }
 
+/* Additional styles for tab buttons */
+#header .nav-list .tabButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 20px;
+}
 
-/* End Header section */
+#header .nav-list .tabButton:hover {
+    color: rgb(17, 59, 90);
+}
+
 
 
 /* Hero Section */
@@ -869,7 +866,6 @@ p {
 
 
 /* Keyframes */
-
 @keyframes hamburger_puls {
     0% {
         opacity: 1;
@@ -904,13 +900,9 @@ p {
         font-weight: 500;
     }
 }
-
-
 /* End Keyframes */
 
-
 /* Media Query For Tablet */
-
 @media only screen and (min-width: 768px) {
     .cta {
         font-size: 2.5rem;
@@ -918,47 +910,56 @@ p {
         align-items: center;
         text-align: center;
     }
+
     h1.section-title {
         font-size: 6rem;
     }
+
     /* Hero */
     #hero h1 {
         font-size: 7rem;
         text-align: center;
     }
     /* End Hero */
+
     /* Services Section */
     #services .service-bottom .service-item {
         flex-basis: 45%;
         margin: 2.5%;
     }
     /* End Services Section */
+
     /* Project */
     #projects .project-item {
         flex-direction: row;
         text-align: center;
     }
+
     #projects .project-item:nth-child(even) {
         flex-direction: row-reverse;
         text-align: center;
     }
-    #projects .project-item {
+
+    #projects .project-item,
+    #projects .all-projects .project-info {
         height: 400px;
         margin: 0;
         width: 100%;
         border-radius: 0;
         text-align: center;
     }
+
     #projects .all-projects .project-info {
         height: 100%;
         text-align: center;
     }
+
     #projects .all-projects .project-img {
         height: 100%;
     }
     /* End Project */
-    
-    /* contact  */
+
+    /* Contact */
     #contact .contact {
         flex-direction: column;
         padding: 100px 0;
@@ -966,6 +967,7 @@ p {
         justify-content: center;
         min-width: 20vh;
     }
+
     #contact .contact-items {
         width: 100%;
         display: flex;
@@ -973,37 +975,39 @@ p {
         justify-content: space-evenly;
         margin: 0;
     }
+
     #contact .contact-item {
         width: 30%;
         margin: 0;
         flex-direction: row;
     }
+
     #contact .contact-item .icon {
         height: 100px;
         width: 100px;
     }
+
     #contact .contact-item .icon img {
         object-fit: contain;
     }
+
     #contact .contact-item .contact-info {
         width: 100%;
         text-align: left;
         padding-left: 20px;
     }
-    /* End contact  */
+    /* End Contact */
 }
-
 
 /* End Media Query For Tablet */
 
-
 /* Media Query For Desktop */
-
 @media only screen and (min-width: 1200px) {
-    /* header */
+    /* Header */
     #header .hamburger {
         display: none;
     }
+
     #header .nav-list ul {
         position: initial;
         display: block;
@@ -1011,24 +1015,123 @@ p {
         width: fit-content;
         background-color: transparent;
     }
+
     #header .nav-list ul li {
         display: inline-block;
     }
+
     #header .nav-list ul li a {
         font-size: 1.8rem;
     }
+
     #header .nav-list ul a:after {
         display: none;
     }
-    /* End header */
+    /* End Header */
+
+    /* Services Section */
     #services .service-bottom .service-item {
         flex-basis: 22%;
         margin: 1.5%;
     }
+    /* End Services Section */
+}
+/* End Media Query For Desktop */
+
+/* Navigation Bar Styles */
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
 }
 
+#header .header {
+    min-height: 8vh;
+    background-color: rgba(91, 139, 188, 0.533);
+    transition: 0.3s ease background-color;
+}
 
-/* End  Media Query For Desktop */
+#header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#header .brand {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#header .brand a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header .brand:hover {
+    border-bottom: 2px solid white; /* Add a bottom border on hover for better visibility */
+}
+
+#header .nav-list {
+    display: flex;
+    align-items: center;
+}
+
+#header .nav-list ul {
+    list-style: none;
+    display: flex;
+}
+
+#header .nav-list ul li {
+    margin-right: 20px;
+}
+
+#header .nav-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+#header .hamburger {
+    height: 30px;
+    width: 30px;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header .hamburger .bar {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+#header .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#header .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* End Navigation Bar Styles */
+
+
 
 
 /* custom scroll bar */
@@ -1084,3 +1187,48 @@ p {
   #email-link:hover {
     color:rgb(16, 51, 122); /* Adjust as needed */
   }
+
+ /* Your existing styles here */
+
+/* Media Query For Small Screens */
+@media only screen and (max-width: 768px) {
+    #header .nav-list {
+        display: none; /* Hide the nav-list by default */
+    }
+
+    #header .hamburger {
+        display: block; /* Show the hamburger icon */
+    }
+
+    #header .hamburger.active + .nav-list,
+    #header .nav-list.active {
+        display: flex; /* Show the nav-list when hamburger is active */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(91, 139, 188, 0.533);
+        z-index: 1000;
+    }
+}
+
+#tab_bar {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+#tab_bar .tabButton a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#tab_bar .tabButton {
+    margin-right: 10px; /* Adjust margin between buttons as needed */
+}
+
+#tab_bar .tabButton:hover {
+    border-bottom: 2px solid white; /* Add a bottom border on hover for better visibility */
+}
+
