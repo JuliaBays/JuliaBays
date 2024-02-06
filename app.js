@@ -49,11 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Scroll back up button
-let mybutton = document.getElementById("upButton");
+// JavaScript to dynamically set the current year
+document.addEventListener("DOMContentLoaded", function() {
+  var currentYear = new Date().getFullYear();
+  document.getElementById("copyright").innerHTML = "Copyright &copy; " + currentYear + " Julia Bays. All rights reserved.";
+});
+
+////////////////////////////////////////////
+  // this function allows to go back to the top of the page
+  ////////////////////////////////////////////
+  let mybutton = document.getElementById("upButton");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
+window.onscroll = function() {
   scrollFunction();
 };
 
@@ -98,10 +106,3 @@ function scrollToTop(element, to, duration) {
 
   animateScroll();
 }
-
-
-// JavaScript to dynamically set the current year
-document.addEventListener("DOMContentLoaded", function() {
-  var currentYear = new Date().getFullYear();
-  document.getElementById("copyright").innerHTML = "Copyright &copy; " + currentYear + " Julia Bays. All rights reserved.";
-});
